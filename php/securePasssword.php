@@ -3,12 +3,10 @@ function securePassword($userPassword, $savedPassword=true) {
 
 $hash = password_hash($userPassword, PASSWORD_BCRYPT);
 
-if(is_bool($savedPassword)) { return $hash; }  
+return is_bool($savedPassword) ? $hash : password_verify($userPassword,$savedPassword);
 
-return password_verify($userPassword,$savedPassword);
 
 }
-
 /* 
 Author Biodun Bamigboye
 
@@ -32,4 +30,6 @@ securePassword('1234567abc','$2y$10$mlbam8RbSg60EvHkwAoavu/nKKrg/otuNl457RxWkhbZ
 return value : false
 
 */
+
+
 
