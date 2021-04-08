@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Obatin Multiple form inputs by ClassName </title>
+</head>
+
+<body>
+    <h1>Function USe Case</h1>
+    <form class="user-form">
+        <input type="text" class="input-field" id="firstName" value="Biodun">
+        <input type="text" class="input-field" id="lastName" value="Bamigboye">
+        <input type="email" class="input-field" id="email" value="biodunbamigboye@eportalnet.com">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
+<script src="obtainInputValuesByClassName.js"></script>
+<script>
+    document.querySelector('.user-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            formValues = obtainInputValuesByClassName('input-field');
+            console.log(formValues)
+            return formValues;
+        })
+        // Return Value : ['Biodun','Bamigboye','biodunbamigboye@eportalnet.com']
+</script>
