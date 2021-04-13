@@ -1,4 +1,6 @@
-const isPalindromeLong = word => {
+
+ const isPalindromeLong = word => {
+
     let stack = word.split('')
     let rword = '';
     rword = stack.reverse().join("");
