@@ -1,10 +1,10 @@
-let isPalindrome = word => {
+let isPalindromeLong = word => {
     let stack = word.split('')
     let rword = '';
     rword = stack.reverse().join("");
     return rword === word
 }
 
-let isPalindrome2 = word => word.toLowerCase().split('').reverse().join("") === word.toLowerCase()
+let isPalindrome = word => word.toLowerCase().split('').reverse().join("") === word.toLowerCase()
 
-console.log(isPalindrome2('raceCAr'))
+console.log(isPalindrome('raceCAr'))
