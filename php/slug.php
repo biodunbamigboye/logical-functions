@@ -26,4 +26,4 @@ function slug(String $text): String{
   
     return $text;
   }
-
+  echo(slug('Nigeria is my Fathers Land%%'));

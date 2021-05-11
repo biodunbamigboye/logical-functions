@@ -1,10 +1,10 @@
 <?php
-    function getUserLocation(){
-    $ip =$_SERVER['REMOTE_ADDR'] ?? false;
+    function getUserLocation($ip=false){
+    if($ip===false)$ip =$_SERVER['REMOTE_ADDR'] ?? false;
     if(!$ip) return 'ip_not_found';
    return unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ip));
                              }
-
+var_dump(getUserLocation('129.205.114.36'));
       /*
         Author : Biodun Bamigboye
 
