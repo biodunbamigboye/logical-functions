@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+
+        </body>
+</html>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+<script>
+   
+const payWithPayStack= (payStackPublicKey,amount,email='defaultem@gmail.com',phone=00000000000,currency='NGN') => {
+    return new Promise((resolve) => {
+         amount = amount * 100;
+        var handler = PaystackPop.setup({
+             key:  payStackPublicKey,
+            email: email,
+            amount: amount,
+            currency: currency,
+            metadata: {
+                custom_fields: [{
+                    display_name: "Mobile Number",
+                    variable_name: "mobile_number",
+                    value: amount,
+                }]
+            },
+            callback: function(response) {
+                resolve(response)
+            },
+            onClose: function() {
+             alert("Transaction Cancelled")
+
+            }
+        });
+        handler.openIframe();
+ 
+    })
+    //-- Promise Ends Here
+}
+
+//-- Usage
+payWithPayStack(
+'pk_test_a10026b64bd79df5bcc9ce8fc7398e5641f4cd9c',
+5000,
+'emailIsOptional@gmail.com'
+,090764636574,'NGN'
+).then((response) =>{
+console.log(response)
+})
+/*
+Author : Biodun Bamigboye
+Email, Phone and Currency is Optional
+*/
+
+
+</script>
