@@ -1,5 +1,5 @@
 <?php
-function verifyPaymentPaystack(String $secretKey,Int $transactionReference)
+function verifyPaymentPaystack(String $secretKey, $transactionReference)
 : Array{
 
 //The parameter after verify/ is the transaction reference to be verified
