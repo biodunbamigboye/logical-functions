@@ -10,7 +10,8 @@ $objectKey = 'gender';
 
 echo  $data->{$objectKey};
 
+// Returns male
+
 /**
- * @return male
  * @author Biodun Bamigboye
  */

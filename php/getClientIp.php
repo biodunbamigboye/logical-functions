@@ -1,5 +1,5 @@
 <?php
-function get_client_ip()
+function get_client_ip(): string
 {
     $ipaddress = '';
     if (isset($_SERVER['HTTP_CLIENT_IP'])) {
@@ -21,4 +21,4 @@ function get_client_ip()
     return $ipaddress;
 }
 
-var_dump(get_client_ip());
+echo get_client_ip();
