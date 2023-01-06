@@ -44,9 +44,9 @@ function twoWayEncryption($data,String $action='encrypt',$type = 'static')  : St
     }
 
     /*
-    Author : Biodun Bamigboye(biodunbamigboye@eportalnet.com)
+    @Author : Biodun Bamigboye(biodunbamigboye@eportalnet.com)
 
-    This function helps to solve the problem of encrypting and decrypting a string in php.
+    @description This function helps to solve the problem of encrypting and decrypting a string in php.
     You can either use static keys if it is to be stored in database and used overtime. 
     or use a dynamic if its only available during a single sign on session.
     Just call the function name and pass the string as an argument. 
