@@ -10,7 +10,7 @@ echo $userdataAsObject->name ;
  //-- To convert it to an array
  $userdataAsArray = json_decode($object,true);
  echo $userdataAsArray['name'] ;
- /* return Value : Biodun Bamigboye */
+ /* return Value: Biodun Bamigboye */
 
  /* 
 Author : Biodun Bamigboye
