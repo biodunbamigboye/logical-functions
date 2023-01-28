@@ -1,6 +1,6 @@
 <?php
 
-function getCurrentDayOfWeek(bool $responseInWords): string|int
+function getCurrentDayOfWeek(bool $responseInWords = false): string|int
 {
     $dayOfWeek = date('w');
     $dayOfWeek = $dayOfWeek == 0 ? 7 : $dayOfWeek;
@@ -13,6 +13,6 @@ function getCurrentDayOfWeek(bool $responseInWords): string|int
         6 => 'Saturday',
         7 => 'Sunday'
     ];
-    
+
     return $responseInWords ? $daysInWord[$dayOfWeek] : $dayOfWeek;
 }
