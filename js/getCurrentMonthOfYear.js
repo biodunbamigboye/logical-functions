@@ -7,5 +7,3 @@ function getCurrentMonthOfYear(responseInWords = false) {
 
     return responseInWords ? monthNames[month-1] : month;
 }
-
-console.log(getCurrentMonthOfYear());
