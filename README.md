@@ -22,3 +22,19 @@ feel free to use optimize and contribute</p>
 <li> An example on WOrking with Object in PHP </li>
 </ul>
 
+<h1> Javascript Functions </h1>
+<ul>
+<li> Capture Image </li>
+<li> Find Lonely Integer </li>
+<li> Find Maximum Value </li>
+<li> Find Minimum Value </li>
+<li> Get Current Day of the Week </li>
+<li> Get Current Month of the year </li>
+<li> get Nth Day of the year </li>
+<li> Check if a number is a palindrome </li>
+<li> Check if a number is a prime number </li>
+<li> Obtain Input Value by class name </li>
+<li> Paystack Integration example </li>
+</ul>
+
+
