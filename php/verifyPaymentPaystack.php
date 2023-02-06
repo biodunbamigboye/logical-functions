@@ -1,6 +1,6 @@
 <?php
-function verifyPaymentPaystack(String $secretKey, $transactionReference)
-: Array{
+function verifyPaymentPaystack(string $secretKey, string $transactionReference)
+: array{
 
 //The parameter after verify/ is the transaction reference to be verified
 $url = 'https://api.paystack.co/transaction/verify/'.$transactionReference;
