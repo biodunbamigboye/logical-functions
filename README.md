@@ -20,6 +20,7 @@ feel free to use optimize and contribute</p>
 <li> Validate Email </li>
 <li> Verify Paystack Payment </li>
 <li> An example on WOrking with Object in PHP </li>
+<li> Get Nth Day of the Year By Date </li>
 </ul>
 
 <h1> Javascript Functions </h1>
