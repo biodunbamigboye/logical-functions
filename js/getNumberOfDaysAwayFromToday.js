@@ -7,3 +7,4 @@ function getNumberOfDaysAwayFromToday($year, $month, $day)
     $day = Math.floor($diff / $oneDay);
     return $day;
 }
+

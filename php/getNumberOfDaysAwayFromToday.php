@@ -9,5 +9,3 @@ function getNumberOfDaysAwayFromToday(int $year, int $month, string $day): int
     $interval = $date->diff($today);
     return $interval->days;
 }
-
-echo getNumberOfDaysAwayFromToday(2020, 12, 31);
