@@ -36,6 +36,7 @@ feel free to use optimize and contribute</p>
 <li> Check if a number is a prime number </li>
 <li> Obtain Input Value by class name </li>
 <li> Paystack Integration example </li>
+<li> Get Nth Day of the Year By Date </li>
 </ul>
 
 
