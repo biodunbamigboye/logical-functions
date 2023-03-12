@@ -38,5 +38,3 @@ feel free to use optimize and contribute</p>
 <li> Paystack Integration example </li>
 <li> Get Nth Day of the Year By Date </li>
 </ul>
-
-
