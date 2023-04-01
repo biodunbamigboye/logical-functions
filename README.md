@@ -22,7 +22,6 @@ feel free to use optimize and contribute</p>
 <li> An example on WOrking with Object in PHP </li>
 <li> Get Nth Day of the Year By Date </li>
 </ul>
-
 <h1> Javascript Functions </h1>
 <ul>
 <li> Capture Image </li>
