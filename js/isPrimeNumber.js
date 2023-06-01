@@ -1,12 +1,12 @@
 const isPrimeNumber = (number) => {
         if (typeof number !== 'number' || number <= 1) return false;
-        for (var i = 2; i <= Math.floor(Math.sqrt(number)); i++) {
+        for (let i = 2; i <= Math.floor(Math.sqrt(number)); i++) {
             if (number % i === 0) return false;
         }
         return true;
     }
     /*
-    Author : wasp ix 
+    Author : wasp ix
 
     Contributor : Biodun Bamigboye
 
