@@ -1,11 +1,9 @@
-function getNthDayOfYear()
-{
-    var date = new Date();
-    var start = new Date(date.getFullYear(), 0, 0);
-    var diff = date - start;
-    var oneDay = 1000 * 60 * 60 * 24;
-    var day = Math.floor(diff / oneDay);
-    return day;
+function getNthDayOfYear() {
+    const date = new Date();
+    const start = new Date(date.getFullYear(), 0, 0);
+    const diff = date - start;
+    const oneDay = 1000 * 60 * 60 * 24;
+    return Math.floor(diff / oneDay);
 }
 
 console.log(getNthDayOfYear());
